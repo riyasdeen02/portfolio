@@ -241,8 +241,8 @@ a.availability-pill:hover {
 .project-card:hover {
   transform: translateY(-4px);
   border-color: rgba(123, 208, 255, 0.35);
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(128, 131, 255, 0.15),
-    0 0 40px -10px rgba(128, 131, 255, 0.35);
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(123, 208, 255, 0.12),
+    0 0 40px -10px rgba(123, 208, 255, 0.25);
 }
 #research .grid > div .material-symbols-outlined {
   display: inline-flex;
@@ -251,7 +251,7 @@ a.availability-pill:hover {
   width: 3rem;
   height: 3rem;
   border-radius: 0.8rem;
-  background: rgba(128, 131, 255, 0.14);
+  background: rgba(123, 208, 255, 0.12);
   margin-bottom: 0.9rem;
 }
 
@@ -485,5 +485,38 @@ footer {
   }
   .project-card:hover .project-cover img {
     transform: none;
+  }
+}
+
+/* Breathing room: roomier cards and section rhythm */
+main section[id] {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+#research .grid > div,
+#achievements details > summary,
+#community .grid > div {
+  padding: 1.5rem !important;
+}
+#education .grid > div,
+#experience .timeline > div,
+#skills .grid > div {
+  padding: 1.75rem !important;
+}
+main section[id] p.leading-relaxed {
+  line-height: 1.7;
+}
+.project-body {
+  padding: 1.35rem 1.5rem 1.5rem;
+}
+@media (max-width: 640px) {
+  #education .grid > div,
+  #experience .timeline > div,
+  #skills .grid > div {
+    padding: 1.25rem !important;
+  }
+  main section[id] {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }

@@ -60,15 +60,15 @@ tailwind.config = {
       },
       spacing: {
         "gutter-lg": "1.5rem",
-        "space-md": "0.75rem",
+        "space-md": "1rem",
         "margin-mobile": "1rem",
         "space-xs": "0.25rem",
-        "space-lg": "1rem",
+        "space-lg": "1.5rem",
         "margin-desktop": "3rem",
         "space-sm": "0.5rem",
         margin: "1.5rem",
         "gutter-sm": "0.75rem",
-        "space-xl": "1.75rem",
+        "space-xl": "2.75rem",
         gutter: "1rem",
       },
       fontFamily: {
