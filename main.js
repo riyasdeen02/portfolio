@@ -104,17 +104,6 @@
     });
   }
 
-  // ---- Scroll progress bar ----
-  const bar = document.getElementById("scroll-progress-bar");
-  if (bar) {
-    const update = () => {
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      bar.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + "%";
-    };
-    window.addEventListener("scroll", update, { passive: true });
-    update();
-  }
-
   // ---- Reveal sections' blocks as they scroll into view ----
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (!reduceMotion && "IntersectionObserver" in window) {

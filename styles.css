@@ -159,22 +159,6 @@ html {
   background-color: #171b2e;
 }
 
-/* Header scroll progress */
-.scroll-progress {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 3px;
-}
-.scroll-progress span {
-  display: block;
-  height: 100%;
-  width: 0;
-  background: linear-gradient(90deg, #8083ff, #7bd0ff, #c3c0ff);
-  box-shadow: 0 0 12px rgba(123, 208, 255, 0.6);
-}
-
 /* Mobile menu */
 .mobile-menu {
   margin-top: 0.5rem;
@@ -231,168 +215,6 @@ a.availability-pill:hover {
   transform: translateY(-2px);
   filter: brightness(1.08);
   box-shadow: 0 14px 30px -8px rgba(123, 208, 255, 0.65);
-}
-
-/* Hero stats */
-.hero-stats {
-  max-width: 40rem;
-}
-.hero-stat {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 0.15rem;
-  padding: 0.85rem 1rem;
-  border-radius: 0.75rem;
-  background: rgba(36, 41, 64, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(8px);
-}
-.hero-stat dd {
-  margin: 0;
-  font-family: "Geist", "Plus Jakarta Sans", sans-serif;
-  font-size: 28px;
-  line-height: 1.1;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  background: linear-gradient(120deg, #ffffff, #7bd0ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.hero-stat dt {
-  white-space: nowrap;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 10px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #b4b3c6;
-}
-
-/* Portrait */
-.portrait-glow {
-  position: absolute;
-  inset: -1.5rem;
-  border-radius: 2rem;
-  background: conic-gradient(from 140deg, #8083ff, #7bd0ff, #a382ff, #8083ff);
-  filter: blur(40px);
-  opacity: 0.45;
-  z-index: 0;
-}
-.portrait-wrap > .relative {
-  z-index: 1;
-}
-.float-chip {
-  position: absolute;
-  z-index: 30;
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  padding: 0.45rem 0.8rem 0.45rem 0.45rem;
-  border-radius: 0.85rem;
-  background: rgba(23, 27, 46, 0.82);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-  animation: chip-float 6s ease-in-out infinite;
-}
-.float-chip span {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-.float-chip b {
-  font-size: 12px;
-  font-weight: 600;
-  color: #fff;
-}
-.float-chip small {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 10px;
-  color: #b4b3c6;
-}
-.float-chip-top {
-  top: 1.5rem;
-  left: -2.5rem;
-}
-.float-chip-bottom {
-  bottom: 4.5rem;
-  right: -2rem;
-  animation-delay: -3s;
-}
-@media (max-width: 640px) {
-  .float-chip-top {
-    left: -0.5rem;
-  }
-  .float-chip-bottom {
-    right: -0.5rem;
-  }
-}
-@keyframes chip-float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-/* Institutions strip */
-.logo-strip {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem 1.5rem;
-  padding: 1rem 1.25rem;
-  border-radius: 1rem;
-  background: rgba(36, 41, 64, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-.logo-strip-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 1.75rem;
-}
-.logo-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 13px;
-  font-weight: 500;
-  color: #e8e6f5;
-  opacity: 0.8;
-  transition: opacity 0.2s;
-}
-.logo-item:hover {
-  opacity: 1;
-}
-.logo-item img {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.4rem;
-  background: #fff;
-  object-fit: contain;
-  padding: 2px;
-}
-
-/* Section headings: larger with a gradient accent bar */
-main section[id] > div:first-child h2 {
-  font-size: clamp(28px, 3.4vw, 40px);
-  line-height: 1.15;
-  letter-spacing: -0.025em;
-}
-main section[id] > div:first-child h2::after {
-  content: "";
-  display: block;
-  width: 3.5rem;
-  height: 4px;
-  margin-top: 0.75rem;
-  border-radius: 9999px;
-  background: linear-gradient(90deg, #8083ff, #7bd0ff);
-}
-main section[id] {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
 }
 
 /* Cards: glass surface, gradient hairline, hover lift */
@@ -653,7 +475,6 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .float-chip,
   .project-modal[open] {
     animation: none;
   }
